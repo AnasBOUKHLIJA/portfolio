@@ -1,0 +1,73 @@
+<div id="root">
+<div class="flex w-100 justify-around items-center header">
+  <img class="icon-menu" *ngIf="navbar == 0" (click)="ChangeEtatNavBar(1)" width="50" height="50" src="assets/images/icon-menu.png" alt="menu">
+  <img class="icon-menu" *ngIf="navbar == 1" (click)="ChangeEtatNavBar(0)" width="50" height="50" src="assets/images/icon-x.png" alt="x">
+    <div class="w-4/5 links" *ngIf="navbar == 1">
+        <ul class="flex justify-evenly">
+          <li class="m-0.5 text-lg font-bold"><a href="/#home">Accueil</a></li>
+          <li class="m-0.5 text-lg font-bold"><a href="/#about">À Propos De Moi</a></li>
+          <li class="m-0.5 text-lg font-bold"><a href="/#projects">Mes Anciens Projets</a></li>
+          <li class="m-0.5 text-lg font-bold"><a href="/#competences">Mes Compétences</a></li>
+          <li class="m-0.5 text-lg font-bold"><a href="/#contact">Contactez moi</a></li>
+        </ul>
+    </div>
+    <div class="w-1/5 flex justify-end mr-3 btn-bar">
+      <button class="btn">Télécharger cv</button>
+    </div>
+</div>
+<div class="relative flex justify-center bienvennue" id="home">
+  <div class="w-2/4 flex justify-start items-center flex-wrap p-20 bienvennue-text">
+    <div class="text-3xl font-bold">Bounjour, Je suis</div>
+    <div class="text-3xl font-bold anas">Anas BOUKHLIJA</div>
+    <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</p>
+    <div class="text-3xl font-bold">développeur</div>
+  </div>
+  <div class="w-2/4 relative flex justify-center items-center bienvennue-img">
+    <img class="h-full z-40 rounded" src="assets/images/1.png" alt="Anas-BOUKHLIJA">
+    <span class="circle z-0"></span>
+  </div>
+</div>
+<div class="about-me" id="about">
+  <h1 class="title">À Propos De Moi</h1>
+  <div class="content">
+   <img src="assets/images/IMG_0817.JPG">
+    <div>
+      <p>I am a Product and UX Designer! I work at the intersection of curiosity, reasoning and imagination, which guide me to uncover insights, (re)frame problems and craft meaningful, future-oriented solutions.
+        I am passionate about providing solutions to users by building accessible products</p>
+    </div>
+  </div>
+</div>
+  <main>
+  <div class="past-projects" id="projects">
+    <h1 class="title" >Mes Anciens Projets</h1>
+    <div class="projects">
+      <div class="projet" *ngFor="let itemProjet of myProjects">
+        <img src="{{itemProjet.thumbnail}}" alt="{{itemProjet.name}}">
+        <div class="content">
+          <h1>{{itemProjet.name}}</h1>
+          <h6>{{itemProjet.date}}</h6>
+          <p>{{itemProjet.description}}{{itemProjet.description}}{{itemProjet.description}}{{itemProjet.description}}</p>
+          <div class="technologies">
+            <img class="technologie" *ngFor="let technologie of itemProjet.technologies" src="assets/images/technologies/{{technologie}}.png" alt="{{technologie}}">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <div class="competence" id="competences">
+      <h1 class="title">Mes Compétences</h1>
+      <div class="competence-item" *ngFor="let competence of mycompetences">
+        <div class="flex justify-between">
+          <h1>{{competence.name}}</h1>
+          <h1>{{competence.pourcentage}}%</h1>
+        </div>
+        <div class="pourcentage-abstract"><div class="pourcentage" style="width: {{competence.pourcentage}}%;"></div></div>
+      </div>
+    </div>
+  </main>
+  <div id="contact">
+
+  </div>
+<button class="btn-arrow"><a href="/#home"><img width="20" height="20" src="assets/images/icon-arrow-up.png" alt="arrow"/></a></button>
+</div>
