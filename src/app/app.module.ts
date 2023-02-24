@@ -7,10 +7,14 @@ import {FormsModule} from "@angular/forms";
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxAnimationsModule } from 'ngx-animations';
+import { ProjectsComponent } from './projects/projects.component';
+import { CompetencesComponent } from './competences/competences.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectsComponent,
+    CompetencesComponent
   ],
   imports: [
     BrowserModule,

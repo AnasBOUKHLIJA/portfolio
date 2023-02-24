@@ -1,0 +1,10 @@
+<div class="competence" id="competences">
+  <h1 class="title">Mes Compétences</h1>
+  <div class="competence-item" *ngFor="let competence of mycompetences">
+    <div class="flex justify-between">
+      <h1>{{competence.name}}</h1>
+      <h1>{{competence.pourcentage}}%</h1>
+    </div>
+    <div class="pourcentage-abstract"><div class="pourcentage" style="width: {{competence.pourcentage}}%;"></div></div>
+  </div>
+</div>

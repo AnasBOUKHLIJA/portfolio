@@ -38,33 +38,8 @@
   </div>
 </div>
   <main>
-  <div class="past-projects" id="projects">
-    <h1 class="title" >Mes Anciens Projets</h1>
-    <div class="projects">
-      <div class="projet" *ngFor="let itemProjet of myProjects">
-        <img src="{{itemProjet.thumbnail}}" alt="{{itemProjet.name}}">
-        <div class="content">
-          <h1>{{itemProjet.name}}</h1>
-          <h6>{{itemProjet.date}}</h6>
-          <p>{{itemProjet.description}}{{itemProjet.description}}{{itemProjet.description}}{{itemProjet.description}}</p>
-          <div class="technologies">
-            <img class="technologie" *ngFor="let technologie of itemProjet.technologies" src="assets/images/technologies/{{technologie}}.png" alt="{{technologie}}">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-    <div class="competence" id="competences">
-      <h1 class="title">Mes Compétences</h1>
-      <div class="competence-item" *ngFor="let competence of mycompetences">
-        <div class="flex justify-between">
-          <h1>{{competence.name}}</h1>
-          <h1>{{competence.pourcentage}}%</h1>
-        </div>
-        <div class="pourcentage-abstract"><div class="pourcentage" style="width: {{competence.pourcentage}}%;"></div></div>
-      </div>
-    </div>
+    <app-projects class="past-projects-app"></app-projects>
+    <app-competences class="competence-app"></app-competences>
   </main>
   <div id="contact">
 

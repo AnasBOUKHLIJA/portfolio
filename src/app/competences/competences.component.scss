@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.competence{
+  min-height: 100vh;
+  position: relative;
+  background-color: #001824;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.title{
+  font-size: 35px;
+  font-weight: bolder;
+  font-style: italic;
+  color: #0096c7;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.competence-item{
+  background-color: #00111a;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 8px 0;
+  position: relative;
+}
+
+.competence-item h1{
+  text-transform: uppercase;
+}
+.competence-item .pourcentage-abstract{
+  width: 100% !important;
+  background-color: #7a7a7a;
+  min-height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.competence-item .pourcentage{
+  background-color: #0096c7;
+  min-height: 6px;
+}
+
