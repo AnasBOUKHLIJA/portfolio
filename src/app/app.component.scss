@@ -37,6 +37,21 @@
   color: #0096c7;
 }
 
+.links-icons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links-icons a{
+  font-size: 40px;
+  margin: 20px;
+  transition: .5s;
+}
+
+.links-icons a:hover{
+  color: #0096c7;
+}
+
 .side-1{
   transform: translateY(-50%);
 }
@@ -51,8 +66,12 @@
 
 ul li:hover{
   color: #0096c7;
+  transition: .5s;
 }
-
+ul li:hover i{
+  transition: .5s;
+  color: #0096c7;
+}
 .icon-menu{
   position: absolute;
   left: -200px;
@@ -101,6 +120,7 @@ ul li:hover{
 .about-me .content div p{
   width: 70%;
   font-size: 20px;
+  line-height: 30px;
 }
 main{
   display: flex;

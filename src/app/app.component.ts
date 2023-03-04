@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {
   trigger,
   state,
@@ -13,9 +13,9 @@ import {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-
+  public innerWidth = window.innerWidth;
   title = 'portfolio';
-  navbar = 1;
+  navbar = 0;
 
   myProjects = [
     {
@@ -203,10 +203,22 @@ export class AppComponent {
       pourcentage: 85,
     },
   ]
+  ngOnInit(){
+    if(window.innerWidth > 768){
+      this.navbar = 1;
+    }
+  }
   ChangeEtatNavBar(value: any){
     this.navbar = value;
   }
-  ngOnInit(){
-    
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.innerWidth = window.innerWidth;
+    if(window.innerWidth < 768){
+      this.navbar = 0;
+    }else{
+      this.navbar = 1;
+    }
   }
+
 }

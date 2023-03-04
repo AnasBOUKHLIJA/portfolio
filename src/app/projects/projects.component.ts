@@ -9,7 +9,7 @@ export class ProjectsComponent {
   myProjects = [
     {
       name:'Gestion des absences',
-      description: 'Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon ',
+      description: 'Application web pour automatiser le processus de gestion des absences des étudiants de l’EST Safi , en accompagnant tous les acteurs impliqués dans ce processus.',
       thumbnail: 'assets/images/thumbnail/absences.png',
       pics: [
         'assets/images/thumbnail/absences (1).png',
@@ -22,7 +22,7 @@ export class ProjectsComponent {
     },
     {
       name:'Inscription en ligne',
-      description: 'Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon ',
+      description: 'projet portait sur la conception et la réalisation d’une application web permettant aux étudiants de s’inscrire sur les différents cursus de l’établissement Ecole supérieure de technologie safi.',
       thumbnail: 'assets/images/thumbnail/inscription.png',
       pics: [
         'assets/images/thumbnail/inscription (1).png',
@@ -35,7 +35,7 @@ export class ProjectsComponent {
     },
     {
       name:'Rosmarina',
-      description: 'Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon ',
+      description: 'Application web pour pizzeria qui permet aux leur clients de commander et de réserver en ligne.',
       thumbnail: 'assets/images/thumbnail/rosmarina.png',
       pics: [
         'assets/images/technologies/rosmarina (1).png',
@@ -48,7 +48,7 @@ export class ProjectsComponent {
     },
     {
       name:'Shefaa',
-      description: 'Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon ',
+      description: 'Application mobile pour les patientes et médecins qui propose une solution informatique et qui vise principalement à aider les patientes souffrant des symptômes et des effets secondaires de la chimiothérapie à mieux gérer leurs maladies au quotidien, et aux médecins de se tenir au courant et de vérifier l\'état de la patiente ',
       thumbnail: 'assets/images/thumbnail/shefaa.PNG',
       pics: [
         'assets/images/technologies/shefaa (1).PNG',
@@ -64,7 +64,7 @@ export class ProjectsComponent {
     },
     {
       name:'Resto Mobile',
-      description: 'Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon ',
+      description: 'Application mobile de restauration qui permet aux clients de commander et de réserver en ligne.',
       thumbnail: 'assets/images/thumbnail/restomobile.jpg',
       pics: [
         'assets/images/technologies/restomobile (1).jpg',
@@ -80,7 +80,7 @@ export class ProjectsComponent {
     },
     {
       name:'Resto',
-      description: 'Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon ',
+      description: 'Application web de restauration qui permet aux clients de commander et de réserver en ligne.',
       thumbnail: 'assets/images/thumbnail/resto.png',
       pics: [
         'assets/images/technologies/resto (1).png',
@@ -93,7 +93,7 @@ export class ProjectsComponent {
     },
     {
       name:'Mon Stock',
-      description: 'Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon Mon Sto ckMon Stoc kMon Stoc kMon Stoc kMon ',
+      description: 'Application web pour la gestion des stocks et la génération des facteurs sous forme de PDF et de statistiques.',
       thumbnail: 'assets/images/thumbnail/monstock.png',
       pics: [
         'assets/images/technologies/monstock (1).png',
